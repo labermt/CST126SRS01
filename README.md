@@ -1,13 +1,13 @@
 # CST126SRS01
 strtrim
 
-Class ID:  Nidoran 
+Class ID: 
 
 SRS ID:  CST126SRS01 
 
-Unresolved Issues:  None. 
+Unresolved Issues:   
 
-Notes:  Compile with Visual Studio 2017 on Windows 10. 
+Notes:   
 
 ---
 
