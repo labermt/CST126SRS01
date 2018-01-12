@@ -27,3 +27,9 @@ The function must work with heap allocated strings.
 The return must be identical to the input parameter. 
 
 Be sure your function passes the provided test cases. 
+
+Your strtrim function may only use methods found in the following headers:
+
+#include \<cctype\>  
+#include \<cstddef\>
+
