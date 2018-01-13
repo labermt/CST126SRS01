@@ -33,3 +33,9 @@ Your strtrim function may only use methods found in the following headers:
 #include \<cctype\>  
 #include \<cstddef\>
 
+You may use the cstring header, but only if you pay very close attention to the updated book Errata for page 435.
+
+#include \<cstring\>
+
+https://docs.google.com/document/d/1KNhD0fjdxFiV8JO5YAvgfpAUMy_8HKVxy9AcS4FJGiA/edit?usp=sharing
+
