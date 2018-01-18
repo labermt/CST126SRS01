@@ -3,21 +3,26 @@
 #include <cctype>  
 #include <cstddef>  
 #include <cstring> 
+#include <iostream>
 
 char* strtrim(char str[])
 {
 	char* begin = str;
+	char* scan = str;
 	char* end = nullptr;
 
-	if (str == nullptr)
+	if (str == nullptr || str == '\0')
 	{
-		return end;
+		return str;
 	}
 	else
 	{
-		while (end != '\0' || begin != '\0')
+		while (end != '\0')
 		{
-			
+			if (isspace(*scan))
+			{
+				std::cout<< scan << std::endl;
+			}
 		}
 	}
 
