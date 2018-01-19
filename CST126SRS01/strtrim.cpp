@@ -4,6 +4,6 @@
 
 char* strtrim(char str[])
 {
-	return 0;
+	return 0;//hey look i changed stuff
 
 }
