@@ -4,6 +4,6 @@
 
 char* strtrim(char str[])
 {
-	return 0;//hey look i changed stuff
+	return 0; //This has to return a pointer to the new string that has been trimmed.
 
 }
