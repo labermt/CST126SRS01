@@ -1,5 +1,6 @@
 
 #include "stdafx.h"
+#include "strtrim.h"
 #include <cctype>  
 #include <cstddef>  
 #include <cstring> 
@@ -9,16 +10,17 @@ char* strtrim(char str[])
 {
 	char* begin = str;
 	char* scan = str;
-	char* end = nullptr;
+	//char* end = nullptr;
 
 	if (str == nullptr || *str == '\0')
 	{
-		return str;
+		// blank
 	}
 	else
 	{
 		while (isspace(*scan) && *scan != '\0')
 		{
+			//*scan = '\0';
 			++scan;
 		}
 
@@ -28,21 +30,21 @@ char* strtrim(char str[])
 		{
 			++scan;
 		}
-		--scan;
-		if (scan < begin)
+
+		if (scan == begin)
 		{
-			str[0] = *begin;
-			return str;
+		 // intentionally blank
 		}
 		else
 		{
-			while (isspace(*scan) && scan >= begin)
-			{
+			--scan;
+			while (isspace(*scan) || *scan == '\0')
+			{	
+				*scan = '\0';
 				--scan;
 			}
-			end = scan;
-			*end = '\0';
 		}
-		return begin;
+		str = begin;
 	}
+	return str;
 }
