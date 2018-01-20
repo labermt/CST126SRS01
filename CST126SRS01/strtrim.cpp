@@ -6,6 +6,8 @@
 
 char* strtrim(char str[])
 {
+	if (str == nullptr || *str == '\0') return str;
+
 	//Pointer to beginning of str
 	char* firstChar = &str[0];
 
@@ -14,16 +16,17 @@ char* strtrim(char str[])
 	//Pointer to end of string
 	char* lastChar = &str[size];
 
-	if (str == nullptr || *str == '\0') return str;
 
 	//Does \t take up one char in memory?
+	// HAVE TO REPEAT THESE!
 	if (isspace(*firstChar)) firstChar++;
 	if (isspace(*lastChar)) lastChar--;
 
 	//Lenght of trimmed string, plus one for addition of null char
-	int lenghtOfTrimmed = lastChar - firstChar + 1;
+	const int lenghtOfTrimmed = lastChar - firstChar + 1;
 
 	//how do I make this new array without memory leak? I would have to add it to the heap but couldn't get rid of it until later in main.cpp :(
+	//char* trimStr[lenghtOfTrimmed] = 
 
 
 
