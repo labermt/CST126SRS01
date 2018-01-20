@@ -23,7 +23,7 @@
     <ProjectGuid>{496D8BE1-D776-44A5-999B-BBEF90434290}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>CST126SRS01Nidoran</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <ProjectName>CST126SRS01</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
