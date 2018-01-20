@@ -6,32 +6,27 @@
 
 char* strtrim(char str[])
 {
+	char* const result = str;
+
 	if (str == nullptr || *str == '\0') return str;
 
 	//Pointer to beginning of str
-	char* firstChar = &str[0];
+	const char* firstChar = str;
 
-	size_t size = sizeof(str);
+	const size_t size = strlen(str) + 1;
 
 	//Pointer to end of string
-	char* lastChar = &str[size];
+	char* lastChar = &str[size - 1];
+
+	while (isspace(*firstChar)) firstChar++;
+
+	memmove(str, firstChar, size);
+
+	while (isspace(*lastChar)) lastChar--;
+
+	*(lastChar + 1) = '\0';
 
 
-	//Does \t take up one char in memory?
-	// HAVE TO REPEAT THESE!
-	if (isspace(*firstChar)) firstChar++;
-	if (isspace(*lastChar)) lastChar--;
-
-	//Lenght of trimmed string, plus one for addition of null char
-	const int lenghtOfTrimmed = lastChar - firstChar + 1;
-
-	//how do I make this new array without memory leak? I would have to add it to the heap but couldn't get rid of it until later in main.cpp :(
-	//char* trimStr[lenghtOfTrimmed] = 
-
-
-
-
-
-	return 0; //This has to return a pointer to the new string that has been trimmed.
+	return str; //This has to return a pointer to the new string that has been trimmed.
 
 }
