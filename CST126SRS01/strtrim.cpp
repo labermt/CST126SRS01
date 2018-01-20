@@ -12,22 +12,27 @@ char* strtrim(char str[])
 	char* scan = str;
 	char* end = nullptr;
 
+	// checks for null ptr or end of string as first character and exits
 	if (str == nullptr || *str == '\0')
 	{
-		// blank
+		// short circut
 	}
 	else
 	{
+		// scans string looking for the first non white space character or the end of string
 		while (isspace(*scan) && *scan != '\0')
 		{
-			//posible solution *begin = scan* increment both until \0 then back fill with \0 until non white space
 			++scan;
 		}
+
 		begin = scan;
+		
+		// scans string for the end if it hasnt found it
 		while (*scan != '\0')
 		{
 			++scan;
 		}
+
 		end = scan;
 
 		if (begin == end)
@@ -36,18 +41,34 @@ char* strtrim(char str[])
 		}
 		else
 		{
-			while (begin != end)
-			{
-				int i = 0;
-				str[i] = begin[i];
-				++i;
-				++begin;
-			}
 			--scan;
-			while (isspace(*scan) || *scan == '\0')
+			// if start of string is not white space and end is not white space exit
+			if (!isspace(str[0]) && !isspace(*scan))
 			{
-				*scan = '\0';
-				--scan;
+				//short circut
+			}
+			else
+			{
+				if (isspace(str[0]))
+				{
+					int i = 0;
+					while (begin != end)
+					{
+						str[i] = *begin;
+						*begin = '\x20';
+						++i;
+						++begin;
+					}
+				}
+				else
+				{
+					//intentionally blank
+				}
+				while (isspace(*scan) || *scan == '\0')
+				{
+					*scan = '\0';
+					--scan;
+				}
 			}
 		}
 	}
