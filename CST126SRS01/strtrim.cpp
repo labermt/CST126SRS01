@@ -14,6 +14,8 @@ char* strtrim(char str[])
 	//Pointer to end of string
 	char* lastChar = &str[size];
 
+	if (str == nullptr || *str == '\0') return str;
+
 	//Does \t take up one char in memory?
 	if (isspace(*firstChar)) firstChar++;
 	if (isspace(*lastChar)) lastChar--;
