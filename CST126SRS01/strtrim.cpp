@@ -35,6 +35,7 @@ char* strtrim(char str[])
 
 		end = scan;
 
+		// if string is nothing but white space set end of string to 0 index
 		if (begin == end)
 		{
 			str[0] = '\0';
@@ -49,6 +50,8 @@ char* strtrim(char str[])
 			}
 			else
 			{
+				// if the start of the string is white space move non white space characters 
+				// and replace with white spaces
 				if (isspace(str[0]))
 				{
 					int i = 0;
@@ -64,6 +67,7 @@ char* strtrim(char str[])
 				{
 					//intentionally blank
 				}
+				// check for spaces at the end of the string and remove them 
 				while (isspace(*scan) || *scan == '\0')
 				{
 					*scan = '\0';
