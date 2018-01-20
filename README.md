@@ -1,7 +1,7 @@
 # CST126SRS01
 strtrim
 
-Class ID:  Nidoran 
+Class ID:  Spheal
 
 SRS ID:  CST126SRS01 
 
