@@ -8,8 +8,8 @@
 
 char* strtrim(char str[])
 {
-	char* begin = str;
-	char* scan = str;
+	auto* begin = str;
+	auto* scan = str;
 	char* end = nullptr;
 
 	// checks for null ptr or end of string as first character and exits
@@ -54,7 +54,7 @@ char* strtrim(char str[])
 				// and replace with white spaces
 				if (isspace(str[0]))
 				{
-					int i = 0;
+					auto i = 0;
 					while (begin != end)
 					{
 						str[i] = *begin;
