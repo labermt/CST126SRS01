@@ -1,12 +1,11 @@
 # CST126SRS01
 strtrim
 
-Class ID: 
+Class ID: Inkay
 
 SRS ID:  CST126SRS01 
 
-Unresolved Issues:   
-
+Unresolved Issues: Program is not complete. I counld not figure out or remember a way to get this to work after not doing this for a year.
 Notes:   
 
 ---
