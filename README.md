@@ -5,7 +5,9 @@ Class ID: JigglyPuff
 
 SRS ID:  CST126SRS01 
 
-Unresolved Issues:   
+Unresolved Issues:   Hi Mitch, Its not working for every test case. Its failing on a white space test. 
+Drew, Jenn, Sasha, and myself worked together for the last four hours to help each other out on this. We will get started on the next
+homework sooner so we can finish in lab rather than afterwards. 
 
 Notes:   
 
