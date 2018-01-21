@@ -63,3 +63,5 @@ Students who complete this assignment before the end of lab on the due date are 
 - The challenge will built as a 64 bit program running the Release configuration. 
 
 We will run the challenge during lecture when we go over the assignment and determine if your team has won the prize. Therefore the team must bring their solution to the following week's lecture to be eligible. 
+
+small change
