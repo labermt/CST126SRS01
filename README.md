@@ -7,7 +7,7 @@ SRS ID:  CST126SRS01
 
 Unresolved Issues:   
 
-Notes:   
+Notes: Code from Saturday's lab was used
 
 ---
 
