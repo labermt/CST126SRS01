@@ -1,13 +1,13 @@
 # CST126SRS01
 strtrim
 
-Class ID: 
+Class ID: Shelmet
 
 SRS ID:  CST126SRS01 
 
-Unresolved Issues:   
+Unresolved Issues: N/A  
 
-Notes:   
+Notes: I would liked to have less code in strtrim.cpp but this helped me learn how pointers work. I'm finally understanding it! Pretty cool!
 
 ---
 
