@@ -1,13 +1,13 @@
 # CST126SRS01
 strtrim
 
-Class ID: 
+Class ID: Meowth
 
 SRS ID:  CST126SRS01 
 
 Unresolved Issues:   
 
-Notes:   
+Notes: Code from Saturday's lab was used
 
 ---
 
