@@ -1,14 +1,17 @@
 # CST126SRS01
 strtrim
 
-Class ID: 
+Class ID: Hippopotus
 
 SRS ID:  CST126SRS01 
 
-Unresolved Issues:   
+Unresolved Issues:  
+	Error codes 
+C1083: File was locked or not reading by the compiler and I could not troubleshoot. Code remains untested.
+2xC2228: Unsure how to use formula, ran out of time.
 
 Notes:   
-
+Spent most of the day working on this. You're right, it becomes alot easier when you only think about one part at a time.
 ---
 
 Purpose:  
