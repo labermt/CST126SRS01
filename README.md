@@ -5,9 +5,9 @@ Class ID: Nidoran
 
 SRS ID:  CST126SRS01 
 
-Unresolved Issues:   
+Unresolved Issues:  None that I know of so far.  
 
-Notes:   
+Notes:  I agree with having one "return" per function. 
 
 ---
 
