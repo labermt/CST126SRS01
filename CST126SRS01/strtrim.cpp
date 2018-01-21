@@ -9,42 +9,46 @@
 
 char* strtrim(char str[])
 {
-	char a[] = { "            Hello World          " };
-	char* begin = a;
 
+	char* begin = str;
 
-	while (isspace(*begin))
+	if (str != nullptr && *str != '\0')
 	{
-		++begin;
-	}
-	//std::cout << begin;
-	char* charFirst = begin; 
-	char* foundChar = begin;
 
-	while (*foundChar != '\0')
-	{
-		++foundChar;
+		while (isspace(*begin))
+		{
+			++begin;
+		}
+		//std::cout << begin;
+		char* charFirst = begin;
+		char* foundChar = begin;
 
-	}
-	
-	char* foundcNull = foundChar; 
-	char* cpFcNull = foundChar;
+		while (*foundChar != '\0')
+		{
+			++foundChar;
 
-	while (!isspace(*foundcNull))
-	{
-		--foundcNull; 
-	}
-	
-	while (isspace(*foundcNull))
-	{
-		foundcNull--;
-	}
-			size_t size = strlen(a); 
-			memmove(foundcNull, cpFcNull, size);
-			memmove(a, charFirst, size + 1);
+		}
 
-			std::cout << a;
+		char* foundcNull = foundChar - 1;
+		char* cpFcNull = foundChar;
+
 		
+		while (isspace(*foundcNull))
+		{
+			if (foundcNull == str)
+				foundcNull - 1; 
+				break;
+			foundcNull--;
+			
+		}
+		size_t size = strlen(str);
+
+		memmove(foundcNull + 1, cpFcNull, size);
+		memmove(str, charFirst, size + 1);
+
+		std::cout << str;
+
+	}
 	return str;
 }
 
