@@ -10,9 +10,9 @@ int main()
 {
 	static const char* strlist[] =
 	{
+		"     ", 
 		nullptr,
 		"",
-		"     ", 
 		"Hello, world!",
 		"    whitespace    ",
 		"whitespace right    ",
@@ -33,8 +33,8 @@ int main()
 
 	static const char* strtrimlist[] =
 	{
-		nullptr,
 		"",
+		nullptr,
 		"",
 		"Hello, world!",
 		"whitespace",
