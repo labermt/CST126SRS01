@@ -1,13 +1,13 @@
 # CST126SRS01
 strtrim
 
-Class ID: 
+Class ID: Nidoran
 
-SRS ID:  CST126SRS01 
+SRS ID: CST126SRS01
 
-Unresolved Issues:   
+Unresolved Issues: None
 
-Notes:   
+Notes: Not fast for any specific use case, but generally efficient.
 
 ---
 
