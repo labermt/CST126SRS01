@@ -54,3 +54,11 @@ Instructions:
 
 []	Grades will be based on accuracy of output and meeting both explicit and implied requirements. 
 	Performance of your code will not impact your grade. 
+
+
+
+
+	"     Hello"
+	teststring = teststring += startpoint(5)
+
+	"Hello"

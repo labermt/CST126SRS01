@@ -8,33 +8,48 @@
 char* strtrim(char passedstring[]) 
 {
 	char* teststring = passedstring;
+
 	//Sets variables for flag, and test flag
-	bool flag = false;
-	int i = 0;
 	
 	if (teststring == nullptr) { return nullptr; } //Stops function should on nullptr
-	int **adx = &teststring;
-	int strt = 0;
-	int fin = 0;
-	while (teststring[i] != '\0')  //Loops until end of string
+
+	int startPoint = 0;
+	int endPoint = 0;
+	bool startFlag = false;
+
+	//size_t strLength = strlen(teststring);
+
+	while (teststring[endPoint] != '\0') //Loops until end of cString, will set start point at first character
 	{
-		while (!iscntrl(teststring[i]))
-		{
-			++i;
+		if (!isspace(teststring[endPoint]) && startFlag == false)
+		{ 
+			startPoint = endPoint;
+			startFlag = true;
 		}
-		strt = i;
+
+		endPoint++;
 	}
 
-	while (i != 0)  //Loops until beginning of string
+	if (startFlag == false)  //Test to see if blank
 	{
-		while (!iscntrl(teststring[i]))
+		startPoint = endPoint;
+	}
+		
+	if (endPoint > 0)
+	{
+		--endPoint;
+
+		while (endPoint > 0 && isspace(teststring[endPoint]))  //Loops from end until it finds a character
 		{
-			--i;
+			--endPoint;
 		}
-		fin = i;
 	}
 
+	teststring += startPoint;
+
+	//strcpy(teststring, teststring + (endPoint - startPoint));
 	
-
+	passedstring = teststring;
+	
 	return passedstring;
 }
