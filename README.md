@@ -1,7 +1,7 @@
 # CST126SRS01
 strtrim
 
-Class ID: 
+Class ID: Sliggoo 
 
 SRS ID:  CST126SRS01 
 
