@@ -29,15 +29,13 @@ The return must be identical to the input parameter.
 
 Be sure your function passes the provided test cases. Additional tests may be run beyond these, so consider this a minimal set of test cases. 
 
-Your strtrim function may only use methods found in the following headers:
+Your strtrim function may not use functions from the standard library, including functions from:
 
 #include \<cctype\>  
 #include \<cstddef\>  
 #include \<cstring\>  
 
-Pay very close attention to the updated book Errata for page 435.
-
-https://docs.google.com/document/d/1KNhD0fjdxFiV8JO5YAvgfpAUMy_8HKVxy9AcS4FJGiA/edit?usp=sharing
+Your strtrim function may not use array syntax. 
 
 Your code must not have undefined behavior. 
 
