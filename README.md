@@ -1,7 +1,7 @@
 # CST126SRS01
 strtrim
 
-Class ID: 
+Class ID: Spearow
 
 SRS ID:  CST126SRS01 
 
